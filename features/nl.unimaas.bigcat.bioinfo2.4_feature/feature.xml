@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="nl.unimaas.bigcat.bioinfo2.4_feature"
+      label="Bioinformatics BGK, MLW, BW 2.4"
+      version="2.5.0.qualifier"
+      provider-name="Department of Bioinformatics - BiGCaT, Maastricht University">
+
+   <plugin
+         id="net.bioclipse.educational"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

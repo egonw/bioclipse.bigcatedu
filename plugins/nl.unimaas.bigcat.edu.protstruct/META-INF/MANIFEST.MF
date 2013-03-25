@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Bioinformatics 2.x - Protein Structure
+Bundle-SymbolicName: nl.unimaas.bigcat.edu.protstruct
+Bundle-Version: 2.5.0.qualifier
+Bundle-Vendor: Department of Bioinformatics - BiGCaT, Maastricht University
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
