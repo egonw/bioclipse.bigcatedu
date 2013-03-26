@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compositeCheatsheet name="Amino Acids">
+   <taskGroup kind="set" name="Amino Acids" skip="false">
+      <intro>
+         <b>Introduction</b>
+This cheat sheet introduces the important features of amino acids for protein structure.
+      </intro>
+   </taskGroup>
+</compositeCheatsheet>

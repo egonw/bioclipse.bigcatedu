@@ -5,8 +5,12 @@
       version="2.5.0.qualifier"
       provider-name="Department of Bioinformatics - BiGCaT, Maastricht University">
 
+   <includes
+         id="net.bioclipse.experimental_feature"
+         version="0.0.0"/>
+
    <plugin
-         id="net.bioclipse.educational"
+         id="nl.unimaas.bigcat.edu.protstruct"
          download-size="0"
          install-size="0"
          version="0.0.0"
