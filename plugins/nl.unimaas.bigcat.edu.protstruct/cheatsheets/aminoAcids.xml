@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<compositeCheatsheet name="Amino Acids">
-   <taskGroup kind="set" name="Amino Acids" skip="false">
-      <intro>
-         <b>Introduction</b>
-This cheat sheet introduces the important features of amino acids for protein structure.
-      </intro>
-   </taskGroup>
-</compositeCheatsheet>
+<cheatsheet title="Amino Acids">
+	<intro>
+		<description>
+			This cheat sheet describes the amino acids, the building blocks of proteins.
+		</description>
+	</intro>
+
+	<item skip="false"
+		title="The 2D structure of an amino acid">
+		<description>
+			Each of the 20 natural amino acids has a unique chemical structure. The protein structure
+			is a direct consequence of the chemical and physical properties that result from the structure.
+			We can depict the chemical structure of lysine in a 2D diagram. Note that the element symbols
+			of carbons are often not shown, and bends in the diagram lines normally indicate where the carbons
+			are found.<br/>Click 'Perform' to show the structure.
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="mol = opsin.parseIUPACName(&quot;lysine&quot;); ui.open(mol);"/>
+    </item>
+	<item skip="false"
+		title="Hydrogens">
+		<description>
+			This structure shows all hydrogens as separate atoms in the structure, as they
+			are in reality too. For convenience, however, these hydrogens are not always depicted
+			explicitly. They are not really removed, but just not depicted. 
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="mol = cdk.fromSMILES(&quot;O=C(O)C(N)CCCCN&quot;); jcp.setModel(mol);"/>
+    </item>
+	<item skip="false"
+		title="The Carboxylic Acid Group">
+		<description>
+			As the name suggests two important features of the amino acid are the amino group (NH<sub>2</sub>)
+			and the (carboxylic) acid group (COOH). Click 'perform' to highlight the acid group.  
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectAtoms(&quot;1, 2, 3&quot;);"/>
+    </item>
+	<item skip="false"
+		title="The Amino Group">
+		<description>
+			Similarly, click 'perform' to highlight the amino group.  
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectAtoms(&quot;5&quot;);"/>
+    </item>
+	<item skip="false"
+		title="The Alpha Carbon">
+		<description>
+			Similarly, click 'perform' to highlight alpha carbon which sits inbetween the amino and the acid group.  
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectAtoms(&quot;4&quot;);"/>
+    </item>
+	<item skip="false"
+		title="The Side Chain">
+		<description>
+			Similarly, click 'perform' to highlight side chain. The amino acid side chain is what makes one
+			amino acid different from the other. A lysine has a side chain with four carbon atoms and a nitrogen
+			at the end. Click 'perform' to highlight the side chain.
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectAtoms(&quot;6,7,8,9,10&quot;);"/>
+    </item>
+ </cheatsheet>

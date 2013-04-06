@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cheatsheet title="Peptides">
+	<intro>
+		<description>
+			This cheat sheet describes how amino acids are involved in peptides.
+		</description>
+	</intro>
+
+	<item skip="false"
+		title="Peptides are formed after a condensation reaction">
+		<description>
+			When two amino acids react with each other to form a peptide, the acid group of the first
+			amino acid reacts with the amino group of the other. In this condensation reaction, the
+			acid group looses the OH while the nitrogen looses one of its hydrogen. A water molecule
+			is split off, and hence the term condensation reaction.
+			<br /><br />
+			Click 'perform' to show a peptide of ILA.
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="mol = cdk.fromSMILES(&quot;O=C(O)C(C)NC(=O)C(CCCCN)NC(=O)C(CC(CC)C)N&quot;); ui.open(mol);"/>
+    </item>
+	<item skip="false"
+		title="Peptide bonds">
+		<description>
+			The bond that is created by this condensation is the peptide bond.
+			<br /><br />
+			Click 'perform' to show the peptide bonds of ILA.
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectBonds(&quot;6,15&quot;);"/>
+    </item>
+	<item skip="false"
+		title="Ile-Lys-Ala">
+		<description>
+			This peptide consists of three amino acids: isoleucine, lysine, and alanine.
+			<br /><br />
+			Click 'perform' to highlight the three amino acids one by one.
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectAtoms(&quot;1,2,3,4,5,6&quot;); js.delay(2); jcp.selectAtoms(&quot;7,8,9,10,11,12,13,14,15&quot;); js.delay(2); jcp.selectAtoms(&quot;16,17,18,19,20,21,22,23,24&quot;);"/>
+    </item>
+	<item skip="false"
+		title="The N-terminus and the C-terminus">
+		<description>
+			A peptide sequence has a N-terminus and a C-terminus. These are used to define the order in which we list
+			amino acids. Each peptide has one N-terminus and one C-terminus.
+			<br /><br />
+			Click 'perform' to highlight both the N-terminus and the C-terminus.
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectAtoms(&quot;1,2,3,24&quot;);"/>
+    </item>
+	<item skip="false"
+		title="The Backbone">
+		<description>
+			A backbone of the peptide is the long chain of atoms that run through the peptide, from the N-terminus to the C-terminus.
+			<br /><br />
+			Click 'perform' to highlight the backbone.
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectAtoms(&quot;3,2,4,6,7,9,15,16,18,24&quot;);"/>
+    </item>
+	<item skip="false"
+		title="The Side Chains">
+		<description>
+			And sprouting from the backbone are the amino acid side chains.
+			<br /><br />
+			Click 'perform' to highlight the three side chains.
+		</description>
+		<action
+			pluginId="net.bioclipse.scripting.ui"
+			class="net.bioclipse.scripting.ui.actions.ScriptAction"
+			param1="jcp.selectAtoms(&quot;5,10,11,12,13,14,19,20,21,22,23&quot;);"/>
+    </item>
+ </cheatsheet>

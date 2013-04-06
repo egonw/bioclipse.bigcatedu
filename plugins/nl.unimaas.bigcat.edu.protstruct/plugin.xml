@@ -17,10 +17,16 @@
             name="Bioinformatics 2.4"/>
       <cheatsheet
             category="nl.unimaas.bigcat.edu.bioinf2.4.cheatsheet.category"
-            composite="true"
+            composite="false"
             contentFile="cheatsheets/aminoAcids.xml"
             id="nl.unimaas.bigcat.edu.protstruct.cheatsheet.aminoacids"
             name="Introduction to Amino Acids"/>
+      <cheatsheet
+            category="nl.unimaas.bigcat.edu.bioinf2.4.cheatsheet.category"
+            composite="false"
+            contentFile="cheatsheets/peptides.xml"
+            id="nl.unimaas.bigcat.edu.protstruct.cheatsheet.peptides"
+            name="Introduction to Peptides"/>
    </extension>
 
 </plugin>
